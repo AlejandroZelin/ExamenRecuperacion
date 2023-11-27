@@ -6,7 +6,7 @@ public class MovimientoYDemas : MonoBehaviour
 {
     Rigidbody2D fisicas;
     public float movX, movY;
-    public float magnitudVelocidad = 3;
+    public float magnitudVelocidad = 4;
     private Color colorOriginal;
     SpriteRenderer sprite;
     private float tiempoDetenido = 2.0f;
@@ -17,8 +17,7 @@ public class MovimientoYDemas : MonoBehaviour
         fisicas = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (detener && Time.time - tiempoColision >= tiempoDetenido)

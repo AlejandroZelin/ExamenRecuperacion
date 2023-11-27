@@ -7,13 +7,7 @@ public class ObjetoEnMovimiento : MonoBehaviour
     private float movY;
     bool haciaUnLado;
     public float Velocidad;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         vigilarDireccion();
